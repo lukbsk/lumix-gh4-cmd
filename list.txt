@@ -1,0 +1,58 @@
+GH4 CMD s
+
+http://192.168.54.1/cam.cgi?mode=getinfo&type=allmenu
+Wszystkie opcje
+
+Put camera in control mode
+http://192.168.54.1:80/cam.cgi?mode=accctrl&type=req_acc&value=4D454930-0100-1000-8001-02070002D200&value2=iPhone
+
+http://192.168.54.1/cam.cgi?mode=getstate – current state http://192.168.54.1/cam.cgi?mode=setsetting&type=afmode&value=facedetection – set auto focus and facedetection
+http://192.168.54.1/cam.cgi?mode=camcmd&value=recmode  = recording mode http://192.168.54.1/cam.cgi?mode=camcmd&value=playmode  =  play mode http://192.168.54.1/cam.cgi?mode=camcmd&value=capture – take picture http://192.168.54.1/cam.cgi?mode=camctrl&type=touchcapt&value=840/234&value2=on – take a picture with focus on a given coordinate http://192.168.54.1/cam.cgi?mode=camctrl&type=touchcapt&value=0/0&value2=off http://192.168.54.1/cam.cgi?mode=camcmd&value=video_recstop  – stop recording video http://192.168.54.1/cam.cgi?mode=camcmd&value=video_recstart – start recording video
+http://192.168.54.1/cam.cgi?mode=camcmd&value=wide-normal – zoom in http://192.168.54.1/cam.cgi?mode=camcmd&value=wide-fast – zoom in http://192.168.54.1/cam.cgi?mode=camcmd&value=tele-normal – zoom in http://192.168.54.1/cam.cgi?mode=camcmd&value=tele-fast – zoom in http://192.168.54.1/cam.cgi?mode=camcmd&value=zoomstop – stop zoon
+http://192.168.54.1/cam.cgi?mode=startstream&value=49473 – start video stream on the specified port http://192.168.54.1/cam.cgi?mode=stopstream
+
+ISO:
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=iso&value=200
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=iso&value=400
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=iso&value=600
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=iso&value=800
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=iso&value=1000
+
+FOCUS PEAKING:
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=peaking&value=off
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=peaking&value=low
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=peaking&value=high
+
+SHUTTER SPEED:
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=shtrspeed&value=1200/1
+
+EXPOSURE:
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=exposure&value=-5
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=exposure&value=5
+
+ASPECT RATIO:
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=aspectratio&value=4:3
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=aspectratio&value=16:9
+
+APERTURE:
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=focal&value=565/256
+
+WHITE BALANCE:
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=whitebalance&value=auto
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=whitebalance&value=daylight
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=whitebalance&value=cloudy
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=whitebalance&value=shade
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=whitebalance&value=halogen
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=whitebalance&value=flash
+
+COLOR MODE:
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=colormode&value=standard
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=colormode&value=vivid
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=colormode&value=natural
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=colormode&value=bw
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=colormode&value=scenery
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=colormode&value=portrait
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=colormode&value=cinelike_d
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=colormode&value=cinelike_v
+- http://192.168.54.1/cam.cgi?mode=setsetting&type=colormode&value=vlog_gamma
+
